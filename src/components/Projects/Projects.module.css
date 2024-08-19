@@ -15,11 +15,7 @@
 .projects {
   margin-top: 4rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.9rem;
-  width: 100%;
+  gap: 0.8rem;
 }
 
 /* Media Queries */
