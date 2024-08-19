@@ -6,62 +6,181 @@
   border-radius: 15px;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
-  width: 350px;
-  margin-left: 20px;
+  width: calc(100% / 3 - 3rem / 3);
 }
 
 .image {
-  margin-bottom: 26px;
+  margin-bottom: 2.2rem;
 }
 
 .title {
-  font-size: 25px;
+  font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 10px;
-  padding-left: 15px;
+  margin-bottom: 1rem;
+  padding: 0 3.5%;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 15px;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  margin-bottom: 10px;
-  padding-left: 15px;
+  margin-bottom: 1rem;
+  padding: 0 3.5%;
 }
 
 .skills {
   width: 100%;
-  margin-top: 14px;
+  margin-top: 0.9rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   list-style: none;
-  padding-left: 15px;
+  padding: 0 3.5%;
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 1.2rem;
   border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 2.2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 3.5%;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 1.7rem;
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
-  margin-bottom: 20px;
+  padding: 0.5rem 2rem;
+  margin: 0 1rem 3rem 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 1250px) {
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .link {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .links {
+    padding: 0 0.5rem;
+  }
+
+  .link {
+    display: block;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .links {
+    padding: 0 3.5%;
+  }
+
+  .link {
+    width: 50%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .links {
+    padding: 0 0.25rem;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .skills {
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .skill {
+    font-size: 1.3rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title,
+  .description {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    margin-top: 1rem;
+  }
+
+  .skills {
+    padding: 0 3.5%;
+    margin-top: 1rem;
+  }
+
+  .links {
+    display: block;
+    padding: 0 1.5%;
+    margin-bottom: 2.5rem;
+  }
+
+  .link {
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
 }

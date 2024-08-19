@@ -5,13 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding-top: 3.5rem;
   z-index: 2;
   margin: 0 10%;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
@@ -23,18 +23,28 @@
 
 .menuItems {
   display: flex;
-  gap: 47px;
+  gap: 3rem;
   list-style: none;
 }
 
 .menuItems a {
-  font-size: 25px;
+  font-size: 1.8rem;
   color: var(--color-text);
   text-decoration: none;
 }
 
+.menuItems a:hover {
+  color: rgb(231, 160, 160);
+}
+
 .menuBtn {
   display: none;
+}
+
+@media screen and (max-width: 916px) {
+  .menuItems {
+    gap: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 830px) {

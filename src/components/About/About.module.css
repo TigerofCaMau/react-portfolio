@@ -3,17 +3,14 @@
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 4.5rem calc(4.5rem + 5%);
   z-index: 1;
+  justify-content: space-between;
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -21,29 +18,31 @@
 
 .content {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .aboutImage {
   width: 35%;
-  padding-right: 50px;
+  height: 35%;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
+  padding-left: 2rem;
 }
 
 .aboutItem {
   display: flex;
-  flex-direction: row;
   align-items: center;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 1rem;
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -59,28 +58,28 @@
 }
 
 .aboutItem img {
-  padding-right: 50px;
+  padding: 0 2rem;
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .aboutItem p {
-  font-size: 18px;
-  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 830px) {
+/* Media Query */
+@media screen and (max-width: 916px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 10%;
   }
 
-  .content {
-    flex-direction: column;
+  .title {
+    margin-bottom: 3rem;
   }
 
   .aboutImage {
@@ -88,11 +87,36 @@
   }
 
   .aboutItems {
-    margin-top: 29px;
+    padding-left: 0;
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutItem img {
+    padding: 0 1.5rem 0 0.5rem;
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    text-align: center;
+  }
+  .aboutItem {
+    padding: 1rem;
+  }
+
+  .aboutItem img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 3rem 5%;
   }
 }

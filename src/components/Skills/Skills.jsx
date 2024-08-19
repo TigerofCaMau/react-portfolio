@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
+import styles from "./Skills.module.css";
 // import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
 
-export const Experience = () => {
+export const Skills = ({ skills }) => {
   return (
-    <section className={styles.container} id="experience">
+    <section className={styles.container} id="skills">
       <h2 className={styles.title}>Skills</h2>
       <div className={styles.content}>
         <div className={styles.skills}>

@@ -1,25 +1,25 @@
 [
   {
-    "title": "Project A",
+    "title": "Real Estate Website",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "This Real Estate project epitomizes modernity and responsiveness. By utilizing the Swiper library, I have transformed it into a visually appealing platform for users.",
+    "skills": ["React", "Swiper"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
+    "title": "E-Commerce Website",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "description": "Powerful and robust e-commerce website that boasts advanced search and filtering capabilities, allowing users to effortlessly find what they are looking for.",
+    "skills": ["React", "JavaScript"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project C",
+    "title": "Travel Website",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "I learned to play around with Tailwind CSS in this React project. The resulting website features an array of stunning images with an intuitive and user-friendly design.",
+    "skills": ["React", "Tailwind"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   }

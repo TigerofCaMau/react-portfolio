@@ -31,9 +31,9 @@ export const About = () => {
               <h3>Skills and Technologies</h3>
               <p>
                 I specialize in HTML, CSS, and JavaScript, and I'm proficient in
-                using frameworks like React to build responsive and dynamic user
-                interfaces. I thrive on continuously expanding my knowledge base
-                and staying ahead of industry trends.
+                using React to build responsive and dynamic user interfaces. I
+                thrive on continuously expanding my knowledge base and staying
+                on top of industry trends.
               </p>
             </div>
           </li>
