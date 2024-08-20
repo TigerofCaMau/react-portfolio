@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Setup git user
+        run: |
+          git config --global user.name "TigerofCaMau"
+          git config --global user.email "aralcbn2020@protonmail.com"
       - name: Install node
         uses: actions/setup-node@v4
       - name: Install project dependencies
